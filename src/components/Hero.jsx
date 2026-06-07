@@ -142,20 +142,20 @@ export default function Hero() {
 
         {/* Left column */}
         <div
-          className="w-full md:w-[42%] flex flex-col justify-start md:justify-center items-start text-left pl-6 pr-6 md:pr-12 md:pl-20 lg:pl-28 xl:pl-36 pt-24 md:pt-0 pb-8 md:py-16 relative z-10"
+          className="w-full md:w-[42%] flex flex-col justify-start md:justify-center items-center text-center md:items-start md:text-left pl-6 pr-6 md:pr-12 md:pl-20 lg:pl-28 xl:pl-36 pt-32 pb-8 md:py-16 relative z-10"
         >
           <p
             ref={taglineRef}
-            className="font-sans text-[10px] md:text-xs tracking-[0.4em] uppercase mb-5"
+            className="font-sans text-[10px] md:text-xs tracking-[0.4em] uppercase mb-3 md:mb-5 text-center md:text-left w-full"
             style={{ color: '#C9A84C', opacity: 0 }}
           >
             Handcrafted Gold Jewellery
           </p>
 
-          <div ref={headlineRef} style={{ overflow: 'hidden' }} className="w-full mb-6">
+          <div ref={headlineRef} style={{ overflow: 'hidden' }} className="w-full mb-4 md:mb-6">
             <div className="line" style={{ overflow: 'hidden' }}>
               <h1
-                className="font-display gold-text text-left font-normal uppercase"
+                className="font-display gold-text text-center md:text-left font-normal uppercase"
                 style={{ fontSize: 'clamp(2.4rem, 5.5vw, 5.5rem)', lineHeight: 1.1, letterSpacing: '0.04em' }}
               >
                 Timeless
@@ -163,7 +163,7 @@ export default function Hero() {
             </div>
             <div className="line" style={{ overflow: 'hidden' }}>
               <h1
-                className="font-display text-left font-normal uppercase"
+                className="font-display text-center md:text-left font-normal uppercase"
                 style={{
                   fontSize: 'clamp(2.4rem, 5.5vw, 5.5rem)',
                   lineHeight: 1.1,
@@ -178,13 +178,13 @@ export default function Hero() {
 
           <p
             ref={subRef}
-            className="font-sans text-xs md:text-sm text-left max-w-sm leading-relaxed"
-            style={{ color: 'rgba(11, 19, 30, 0.65)', opacity: 0, marginBottom: '4.5rem' }}
+            className="font-sans text-xs md:text-sm text-center md:text-left max-w-xs md:max-w-sm leading-relaxed mb-6 md:mb-16"
+            style={{ color: 'rgba(11, 19, 30, 0.65)', opacity: 0 }}
           >
             Discover the elegance of handcrafted gold jewellery, designed with passion, precision and perfection.
           </p>
 
-          <div ref={ctaRef} className="flex flex-row flex-wrap gap-4 md:gap-8 items-center justify-start w-full">
+          <div ref={ctaRef} className="flex flex-row flex-wrap gap-4 md:gap-8 items-center justify-center md:justify-start w-full">
             <a
               href="#collection"
               className="uiverse-gold-btn"
@@ -208,7 +208,7 @@ export default function Hero() {
 
         {/* Right column: showcase of the gold necklace set (Mobile only) */}
         <div
-          className="w-full md:hidden h-[450px] sm:h-[520px] relative z-0 flex items-center justify-center grow"
+          className="w-full md:hidden h-[340px] sm:h-[420px] relative z-0 flex items-center justify-center grow"
         >
           <img
             src={heroBgImage}

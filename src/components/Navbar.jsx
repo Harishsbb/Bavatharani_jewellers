@@ -73,10 +73,10 @@ export default function Navbar() {
             />
           </div>
           <div className="flex flex-col items-start leading-tight">
-            <span className="font-display text-[#0B131E] text-sm md:text-[17px] tracking-[0.2em] font-bold">
+            <span className="font-display text-[#0B131E] text-xs sm:text-sm md:text-[17px] tracking-[0.12em] md:tracking-[0.2em] font-bold">
               BAVATHARANI
             </span>
-            <span className="font-display text-[9px] md:text-[10px] tracking-[0.34em] text-[#A87C11] font-bold">
+            <span className="font-display text-[7.5px] sm:text-[9px] md:text-[10px] tracking-[0.25em] md:tracking-[0.34em] text-[#A87C11] font-bold">
               JEWELLERS
             </span>
           </div>

@@ -297,11 +297,11 @@ export default function Collection() {
               onMouseEnter={onCardEnter}
               onMouseLeave={onCardLeave}
               onClick={() => setSelectedCategory(cat)}
-              className="bg-white border border-[rgba(201,168,76,0.14)] rounded-3xl p-4 pb-6 flex flex-col justify-between items-stretch transition-all duration-500 shadow-[0_8px_30px_rgba(201,168,76,0.02)] relative overflow-hidden cursor-pointer"
-              style={{ opacity: 0, height: '420px' }}
+              className="bg-white border border-[rgba(201,168,76,0.14)] rounded-3xl p-4 pb-6 flex flex-col justify-between items-stretch transition-all duration-500 shadow-[0_8px_30px_rgba(201,168,76,0.02)] relative overflow-hidden cursor-pointer h-[330px] md:h-[420px]"
+              style={{ opacity: 0 }}
             >
               {/* Product Image Showcase container */}
-              <div className="w-full h-[200px] rounded-2xl overflow-hidden relative group shrink-0">
+              <div className="w-full h-[140px] md:h-[200px] rounded-2xl overflow-hidden relative group shrink-0">
                 <img
                   src={cat.image}
                   alt={cat.name}
@@ -318,19 +318,19 @@ export default function Collection() {
                 {cat.icon}
                 
                 {/* Category Title */}
-                <h3 className="font-display text-[14px] md:text-[15px] font-bold text-[#0B131E] tracking-[0.2em] uppercase mt-2">
+                <h3 className="font-display text-[13px] md:text-[15px] font-bold text-[#0B131E] tracking-[0.2em] uppercase mt-2">
                   {cat.name}
                 </h3>
                 
                 {/* Designs Count */}
-                <p className="font-sans text-[10px] md:text-[11px] tracking-[0.12em] text-[#C9A84C] mt-1 font-semibold">
+                <p className="font-sans text-[9px] md:text-[11px] tracking-[0.12em] text-[#C9A84C] mt-1 font-semibold">
                   {cat.designs}
                 </p>
               </div>
 
               {/* Card Footer: Explore Collection text + Arrow Button */}
-              <div className="flex items-center justify-between w-full pt-4 mt-auto border-t border-[rgba(201,168,76,0.08)]">
-                <span className="font-sans text-[10px] font-bold text-[#0B131E]/55 tracking-wider uppercase">
+              <div className="flex items-center justify-between md:justify-between w-full pt-4 mt-auto border-t border-[rgba(201,168,76,0.08)]">
+                <span className="hidden sm:inline font-sans text-[10px] font-bold text-[#0B131E]/55 tracking-wider uppercase">
                   Explore Collection
                 </span>
 

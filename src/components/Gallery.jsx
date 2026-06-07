@@ -62,7 +62,7 @@ export default function Gallery() {
   }
 
   return (
-    <section ref={sectionRef} id="gallery" style={{ background: '#FFFFFF' }} className="w-full flex flex-col items-center py-16 md:py-32">
+    <section ref={sectionRef} id="gallery" style={{ background: '#FFFFFF' }} className="w-full flex flex-col items-center pt-16 pb-28 md:pt-32 md:pb-48">
       <div className="max-w-6xl w-full mx-auto px-6 md:px-12 flex flex-col items-center">
         {/* Heading */}
         <div ref={headingRef} className="text-center mb-16 flex flex-col items-center w-full" style={{ opacity: 0 }}>

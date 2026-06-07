@@ -89,7 +89,7 @@ export default function Contact() {
     <section
       ref={sectionRef}
       id="contact"
-      className="pt-20 md:pt-36 pb-16 md:pb-16"
+      className="pb-16 md:pb-16"
       style={{
         background: '#0A1118',
         position: 'relative',
@@ -104,6 +104,23 @@ export default function Contact() {
       {/* Refined Dark Theme CSS Styles */}
       <style dangerouslySetInnerHTML={{
         __html: `
+        #contact {
+          padding-top: 4rem !important;
+        }
+        @media (min-width: 768px) {
+          #contact {
+            padding-top: 6rem !important;
+          }
+        }
+        .contact-grid {
+          padding-top: 2rem !important;
+        }
+        @media (min-width: 768px) {
+          .contact-grid {
+            padding-top: 3rem !important;
+          }
+        }
+        
         .editorial-input-group {
           position: relative;
           margin-bottom: 2.2rem;
@@ -300,7 +317,7 @@ export default function Contact() {
         className="relative px-6 md:px-12 w-full max-w-6xl z-10 flex flex-col items-center"
       >
         {/* Main Grid: Dark Luxury Frameless Editorial Layout */}
-        <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 mb-16 md:mb-36 items-start text-left">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 contact-grid mb-16 md:mb-36 items-start text-left">
 
           {/* Left Column: Boutique & Workshop Info */}
           <div className="lg:col-span-5 flex flex-col gap-12 reveal" style={{ opacity: 0 }}>
@@ -515,17 +532,17 @@ export default function Contact() {
                   type="submit"
                   className="uiverse-gold-btn"
                   style={{
-                    marginTop: '10px',      // Move button down (positive value) or up (negative value)
+                    marginTop: '10px',      // MOVE DOWN: increase (e.g. '30px'), MOVE UP: decrease (e.g. '-10px')
                     marginBottom: '0px',   // Spacing below the button
-                    marginLeft: '0px',     // Move button right
-                    marginRight: '0px',    // Move button left
-                    paddingTop: '12px',    // Button top padding
-                    paddingBottom: '10px', // Button bottom padding
-                    paddingLeft: '32px',   // Button left padding
-                    paddingRight: '32px',  // Button right padding
-                    fontSize: '11px',      // Button text size
-                    width: 'auto',         // Button width (e.g. '200px' or 'auto')
-                    height: 'auto'         // Button height
+                    marginLeft: '0px',     // MOVE RIGHT: increase (e.g. '20px')
+                    marginRight: '0px',    // MOVE LEFT: increase (e.g. '20px')
+                    paddingTop: '12px',    // SIZE: Top Padding
+                    paddingBottom: '10px', // SIZE: Bottom Padding
+                    paddingLeft: '32px',   // SIZE: Left Padding
+                    paddingRight: '32px',  // SIZE: Right Padding
+                    fontSize: '11px',      // TEXT SIZE
+                    width: 'auto',         // Width: 'auto' or fixed width (e.g. '200px')
+                    height: 'auto'         // Height: 'auto'
                   }}
                 >
                   Submit
