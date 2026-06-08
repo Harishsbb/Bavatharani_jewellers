@@ -239,11 +239,10 @@ export default function Nucleus() {
       id="nucleus"
       style={{
         background: 'linear-gradient(180deg, #FFFFFF 0%, #FAF6EE 50%, #FFFFFF 100%)',
-        padding: '10rem 0 8rem',
         position: 'relative',
         overflow: 'hidden',
       }}
-      className="w-full flex flex-col items-center justify-center"
+      className="w-full flex flex-col items-center justify-center py-16 md:py-32"
     >
       {/* Radial bg glow */}
       <div
@@ -272,13 +271,9 @@ export default function Nucleus() {
           {/* 3D Nucleus canvas */}
           <div
             ref={canvasRef}
+            className="w-full max-w-[280px] h-[280px] sm:max-w-[360px] sm:h-[360px] md:max-w-[460px] md:h-[460px] shrink-0 self-center pointer-events-none"
             style={{
-              flex: '0 0 auto',
-              width: '100%',
-              maxWidth: '460px',
-              height: '460px',
               opacity: 0,
-              alignSelf: 'center',
             }}
           >
             <Canvas
@@ -343,7 +338,7 @@ export default function Nucleus() {
             </p>
 
             {/* Stats */}
-            <div className="flex gap-12 mt-10">
+            <div className="flex flex-wrap gap-6 sm:gap-12 mt-10">
               {[
                 { value: '22K', label: 'Purity Standard' },
                 { value: '1064°', label: 'Melting Point' },

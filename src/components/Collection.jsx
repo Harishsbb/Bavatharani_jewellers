@@ -276,7 +276,7 @@ export default function Collection() {
           </p>
           <a
             href="#gallery"
-            className="fade-up uiverse-gold-btn mt-2"
+            className="fade-up uiverse-gold-btn mt-2 view-collections-btn"
             style={{
               opacity: 0,
             }}
@@ -329,7 +329,7 @@ export default function Collection() {
               </div>
 
               {/* Card Footer: Explore Collection text + Arrow Button */}
-              <div className="flex items-center justify-between md:justify-between w-full pt-4 mt-auto border-t border-[rgba(201,168,76,0.08)]">
+              <div className="flex items-center justify-center sm:justify-between w-full pt-4 mt-auto border-t border-[rgba(201,168,76,0.08)]">
                 <span className="hidden sm:inline font-sans text-[10px] font-bold text-[#0B131E]/55 tracking-wider uppercase">
                   Explore Collection
                 </span>
@@ -377,7 +377,7 @@ export default function Collection() {
             </button>
 
             {/* Left: Beautiful Image Container */}
-            <div className="w-full md:w-1/2 h-[260px] md:h-auto min-h-[300px] relative shrink-0">
+            <div className="w-full md:w-1/2 h-[200px] md:h-auto md:min-h-[300px] relative shrink-0">
               <img 
                 src={selectedCategory.image} 
                 alt={selectedCategory.name} 

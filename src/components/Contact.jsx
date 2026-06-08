@@ -105,11 +105,13 @@ export default function Contact() {
       <style dangerouslySetInnerHTML={{
         __html: `
         #contact {
-          padding-top: 4rem !important;
+          padding-top: 2.5rem !important;
+          margin-top: 2.5rem !important;
         }
         @media (min-width: 768px) {
           #contact {
-            padding-top: 6rem !important;
+            padding-top: 3.5rem !important;
+            margin-top: 0 !important;
           }
         }
         .contact-grid {
@@ -298,7 +300,7 @@ export default function Contact() {
       `}} />
 
       {/* 3D background (highly luminous gold spheres on dark background) */}
-      <div style={{ position: 'absolute', inset: 0, zIndex: 0, opacity: 0.65 }}>
+      <div style={{ position: 'absolute', inset: 0, zIndex: 0, opacity: 0.65, pointerEvents: 'none' }}>
         <Canvas camera={{ position: [0, 0, 8], fov: 60 }} gl={{ antialias: true, alpha: true }}>
           <Environment preset="studio" />
           <ambientLight intensity={0.1} />
@@ -514,7 +516,7 @@ export default function Contact() {
               </div>
 
               {/* Newsletter checkbox */}
-              <div className="flex items-center gap-3 mt-1 mb-8">
+              <div className="flex items-start gap-3 mt-1 mb-8">
                 <input
                   type="checkbox"
                   id="newsletter"

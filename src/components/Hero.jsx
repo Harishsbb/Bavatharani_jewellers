@@ -117,7 +117,7 @@ export default function Hero() {
         ref={sectionRef}
         id="hero"
         style={{ minHeight: '100vh', background: '#FAF6EE', position: 'relative' }}
-        className="flex flex-col justify-between overflow-hidden"
+        className="flex flex-col justify-between overflow-x-clip"
       >
       {/* Absolute Background Image (Desktop only) */}
       <div
@@ -142,7 +142,7 @@ export default function Hero() {
 
         {/* Left column */}
         <div
-          className="w-full md:w-[42%] flex flex-col justify-start md:justify-center items-center text-center md:items-start md:text-left pl-6 pr-6 md:pr-12 md:pl-20 lg:pl-28 xl:pl-36 pt-32 pb-8 md:py-16 relative z-10"
+          className="hero-text-col w-full md:w-[42%] flex flex-col justify-start md:justify-center items-center text-center md:items-start md:text-left pl-6 pr-6 md:pr-12 md:pl-20 lg:pl-28 xl:pl-36 pb-6 md:py-16 relative z-10 shrink-0"
         >
           <p
             ref={taglineRef}
@@ -184,7 +184,7 @@ export default function Hero() {
             Discover the elegance of handcrafted gold jewellery, designed with passion, precision and perfection.
           </p>
 
-          <div ref={ctaRef} className="flex flex-row flex-wrap gap-4 md:gap-8 items-center justify-center md:justify-start w-full">
+          <div ref={ctaRef} className="hero-cta-wrap flex flex-row flex-wrap gap-4 md:gap-8 items-center justify-center md:justify-start w-full">
             <a
               href="#collection"
               className="uiverse-gold-btn"
@@ -208,7 +208,7 @@ export default function Hero() {
 
         {/* Right column: showcase of the gold necklace set (Mobile only) */}
         <div
-          className="w-full md:hidden h-[340px] sm:h-[420px] relative z-0 flex items-center justify-center grow"
+          className="hero-image-col w-full md:hidden h-[340px] sm:h-[420px] relative z-0 flex items-center justify-center grow shrink-0"
         >
           <img
             src={heroBgImage}
@@ -244,7 +244,7 @@ export default function Hero() {
 
     {/* Floating Stats Bar pill overlapping bottom edge */}
     <div 
-      className="absolute bottom-[-40px] left-1/2 -translate-x-1/2 w-[92%] max-w-5xl bg-white/90 backdrop-blur-md border border-[rgba(201,168,76,0.18)] rounded-2xl shadow-[0_25px_50px_rgba(201,168,76,0.08)] z-30 transition-all duration-300 hover:shadow-[0_30px_60px_rgba(201,168,76,0.12)]"
+      className="relative md:absolute md:bottom-[-40px] md:left-1/2 md:-translate-x-1/2 translate-x-0 w-[92%] max-w-5xl bg-white/90 backdrop-blur-md border border-[rgba(201,168,76,0.18)] rounded-2xl shadow-[0_25px_50px_rgba(201,168,76,0.08)] z-30 transition-all duration-300 hover:shadow-[0_30px_60px_rgba(201,168,76,0.12)] mx-auto mt-8 md:mt-0"
     >
       <div className="grid grid-cols-2 lg:grid-cols-4 py-5 md:py-6">
 

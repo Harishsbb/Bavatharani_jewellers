@@ -128,13 +128,13 @@ export default function Gallery() {
                 >
                   {/* Product Image Showcase */}
                   <div
+                    className="p-6 sm:p-10"
                     style={{
                       position: 'absolute',
                       inset: 0,
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      padding: '2.5rem',
                     }}
                   >
                     <img

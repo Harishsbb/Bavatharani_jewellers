@@ -48,17 +48,15 @@ export default function Navbar() {
           backdropFilter: 'blur(20px)',
           borderBottom: '1px solid rgba(201, 168, 76, 0.12)',
         }}
-        className={`fixed top-0 left-0 right-0 z-50 px-6 md:px-20 transition-all duration-500 flex items-center justify-between ${
-          scrolled ? 'py-4 md:py-6' : 'py-5.5 md:py-9'
+        className={`fixed top-0 left-0 right-0 z-50 px-4 md:px-20 transition-all duration-500 flex items-center justify-between ${
+          scrolled ? 'py-3.5 md:py-6' : 'py-5 md:py-9'
         }`}
       >
         {/* Custom BJ Monogram Logo */}
-        <a href="#hero" className="flex items-center gap-4.5 select-none" style={{ textDecoration: 'none' }}>
+        <a href="#hero" className="flex items-center gap-2.5 md:gap-4.5 select-none" style={{ textDecoration: 'none' }}>
           <div
-            className="flex items-center justify-center rounded-full border border-[#C9A84C]"
+            className="flex items-center justify-center rounded-full border border-[#C9A84C] w-11 h-11 md:w-[54px] md:h-[54px]"
             style={{
-              width: '54px',
-              height: '54px',
               borderWidth: '0.75px',
               borderColor: '#C9A84C',
               boxShadow: '0 0 18px rgba(201, 168, 76, 0.18)',
@@ -73,10 +71,10 @@ export default function Navbar() {
             />
           </div>
           <div className="flex flex-col items-start leading-tight">
-            <span className="font-display text-[#0B131E] text-xs sm:text-sm md:text-[17px] tracking-[0.12em] md:tracking-[0.2em] font-bold">
+            <span className="font-display text-[#0B131E] text-[11px] sm:text-sm md:text-[17px] tracking-[0.12em] md:tracking-[0.2em] font-bold">
               BAVATHARANI
             </span>
-            <span className="font-display text-[7.5px] sm:text-[9px] md:text-[10px] tracking-[0.25em] md:tracking-[0.34em] text-[#A87C11] font-bold">
+            <span className="font-display text-[7px] sm:text-[9px] md:text-[10px] tracking-[0.25em] md:tracking-[0.34em] text-[#A87C11] font-bold">
               JEWELLERS
             </span>
           </div>
